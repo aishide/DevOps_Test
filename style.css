@@ -18,12 +18,7 @@
 body {
   margin: 0;
   font-family: 'Inter', system-ui, sans-serif;
-  background-color: #f4d7a4;
-  background-image:
-    linear-gradient(45deg, rgba(0,0,0,0.08) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.08) 75%, rgba(0,0,0,0.08) 100%),
-    linear-gradient(135deg, rgba(0,0,0,0.08) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.08) 75%, rgba(0,0,0,0.08) 100%),
-    radial-gradient(circle at top left, rgba(255,255,255,0.6), transparent 35%);
-  background-size: 40px 40px, 40px 40px, 100% 100%;
+  background: radial-gradient(circle at top left, #f9f5ff 0%, #ffe7ff 35%, #fff7ff 100%);
   color: var(--text);
 }
 
@@ -137,41 +132,6 @@ h1 {
   left: 54%;
   transform: translateX(-50%);
   box-shadow: 0 10px 20px rgba(255,95,127,0.35);
-}
-
-.topping-badge {
-  position: absolute;
-  top: 16px;
-  right: 18px;
-  width: 52px;
-  height: 52px;
-  display: grid;
-  place-items: center;
-  border-radius: 22px;
-  background: rgba(255, 255, 255, 0.88);
-  font-size: 1.6rem;
-  box-shadow: 0 12px 18px rgba(118, 57, 128, 0.14);
-  transition: transform 0.2s ease, background 0.2s ease;
-}
-
-.ice-cream-card:hover .topping-badge {
-  transform: translateY(-2px);
-}
-
-.button.secondary {
-  margin-top: 12px;
-  background: white;
-  color: var(--text);
-  border: 2px solid var(--accent);
-}
-
-.button.secondary:hover {
-  background: var(--accent-soft);
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
 }
 
 .builder-panel {
