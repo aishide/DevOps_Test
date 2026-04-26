@@ -18,8 +18,84 @@
 body {
   margin: 0;
   font-family: 'Inter', system-ui, sans-serif;
-  background: radial-gradient(circle at top left, #f9f5ff 0%, #ffe7ff 35%, #fff7ff 100%);
+  background: linear-gradient(180deg, #fffcff 0%, #fce4ff 45%, #ffe8f5 100%);
   color: var(--text);
+  overflow-x: hidden;
+}
+
+.ice-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.75), transparent 28%),
+              radial-gradient(circle at 80% 10%, rgba(255, 240, 255, 0.8), transparent 24%),
+              linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(255, 237, 249, 0.65));
+}
+
+.ice-bg span {
+  position: absolute;
+  font-size: 3rem;
+  opacity: 0.85;
+  animation: floatIce 12s linear infinite;
+  will-change: transform, opacity;
+}
+
+.ice-bg span:nth-child(1) {
+  left: 8%;
+  top: 110%;
+  animation-delay: 0s;
+  animation-duration: 14s;
+}
+
+.ice-bg span:nth-child(2) {
+  left: 55%;
+  top: 120%;
+  animation-delay: 2s;
+  animation-duration: 16s;
+}
+
+.ice-bg span:nth-child(3) {
+  left: 28%;
+  top: 115%;
+  animation-delay: 4s;
+  animation-duration: 18s;
+}
+
+.ice-bg span:nth-child(4) {
+  left: 78%;
+  top: 112%;
+  animation-delay: 1s;
+  animation-duration: 15s;
+}
+
+.ice-bg span:nth-child(5) {
+  left: 45%;
+  top: 105%;
+  animation-delay: 3s;
+  animation-duration: 17s;
+}
+
+.ice-bg span:nth-child(6) {
+  left: 65%;
+  top: 108%;
+  animation-delay: 5s;
+  animation-duration: 19s;
+}
+
+@keyframes floatIce {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-10vw, -140vh) rotate(360deg);
+    opacity: 0.4;
+  }
 }
 
 .page-shell {
