@@ -20,6 +20,7 @@ const selectedFlavorText = document.getElementById('selectedFlavor');
 const selectedToppingText = document.getElementById('selectedTopping');
 const toast = document.getElementById('toast');
 const orderButton = document.getElementById('orderButton');
+const logoutButton = document.getElementById('logoutButton');
 
 let selectedFlavor = flavorOptions[0];
 let selectedTopping = toppingOptions[1];
@@ -69,6 +70,13 @@ function showToast(message) {
 orderButton.addEventListener('click', () => {
   showToast(`Ordered: ${selectedFlavor.name} with ${selectedTopping.name}!`);
 });
+
+if (logoutButton) {
+  logoutButton.addEventListener('click', () => {
+    localStorage.removeItem('icyyUser');
+    window.location.href = 'login.html';
+  });
+}
 
 renderOptions();
 updateSummary();

@@ -21,7 +21,7 @@
         <span class="eyebrow">Welcome to</span>
         <h1>Icyy</h1>
         <p>Build your dream ice cream cone with cartoon vibes, bright flavors, and tasty toppings.</p>
-        <h3 style="text-align: center;">Start by picking a flavor and topping to see your cone come to life!</h3>
+        <h3 class="welcome-user">Hi, <span id="userName"></span>! Start by picking a flavor and topping.</h3>
         <h3 style="text-align: right;">-AISHI DE</h3>
       </div>
       <div class="hero-visual">
@@ -54,6 +54,7 @@
             <p><strong>Topping:</strong> <span id="selectedTopping">Chocolate Chips</span></p>
           </div>
           <button id="orderButton" class="button">Order Your Icyy Cone</button>
+          <button id="logoutButton" class="button secondary">Logout</button>
           <p class="note">Tap the flavor and topping to customize your cartoon cone.</p>
         </div>
       </section>
@@ -67,6 +68,7 @@
 
   <div class="toast" id="toast">Your icy treat is on its way!</div>
 
+  <script src="auth.js" defer></script>
   <script src="script.js"></script>
 </body>
 </html>

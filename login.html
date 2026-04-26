@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Icyy Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell login-shell">
+    <div class="login-card card">
+      <div class="login-header">
+        <span class="eyebrow">Welcome back to</span>
+        <h1>Icyy</h1>
+        <p>Sign in to build your tasty ice cream cone.</p>
+      </div>
+      <form id="loginForm" class="login-form">
+        <div class="field-row">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" placeholder="Enter your name" />
+        </div>
+        <div class="field-row">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="Enter a password" />
+        </div>
+        <div class="button-group">
+          <button type="submit" class="button">Login</button>
+        </div>
+        <p class="note">Use any username and password to continue.</p>
+        <p class="error-text" id="loginError"></p>
+      </form>
+    </div>
+  </div>
+  <script src="login.js" defer></script>
+</body>
+</html>
