@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Icyy Ice Cream Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-text">
+        <span class="eyebrow">Welcome to</span>
+        <h1>Icyy</h1>
+        <p>Build your dream ice cream cone with cartoon vibes, bright flavors, and tasty toppings.</p>
+      </div>
+      <div class="hero-visual">
+        <div class="ice-cream-card">
+          <div class="cone"></div>
+          <div class="scoop scoop-1"></div>
+          <div class="scoop scoop-2"></div>
+          <div class="scoop scoop-3"></div>
+          <div class="cherry"></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="builder-panel">
+        <div class="panel card">
+          <h2>Choose your flavor</h2>
+          <div class="options-grid" id="flavorOptions"></div>
+        </div>
+
+        <div class="panel card">
+          <h2>Pick a topping</h2>
+          <div class="options-grid" id="toppingOptions"></div>
+        </div>
+
+        <div class="panel card summary-card">
+          <h2>Your Icyy Scoop</h2>
+          <div class="summary-block">
+            <p><strong>Flavor:</strong> <span id="selectedFlavor">Mint</span></p>
+            <p><strong>Topping:</strong> <span id="selectedTopping">Chocolate Chips</span></p>
+          </div>
+          <button id="orderButton" class="button">Order Your Icyy Cone</button>
+          <p class="note">Tap the flavor and topping to customize your cartoon cone.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made with love and sprinkles at Icyy.</p>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast">Your icy treat is on its way!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
